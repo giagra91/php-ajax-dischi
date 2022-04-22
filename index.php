@@ -13,23 +13,28 @@
     <title>Php Dischi</title>
 </head>
 <body>
-    <header>
-        <img src="img/logo.svg" alt="">
-    </header>
-    
-    <main>
-
-        <div id="app">
+    <div id="app">
+        <header>
+            <img src="img/logo.svg" alt="">
+            <select name="album-genres" id="album-genres">
+                <option value="Rock">Rock</option>
+                <option value="Pop">Pop</option>
+                <option value="Metal">Metal</option>
+                <option value="Jazz">Jazz</option>
+            </select>
+        </header>
+        
+        <main>
             <div class="central-container">
                 <div class="album-card" v-for="album in albums">
                     <img :src="album.poster" :alt="album.title">
-                    <h5>{{ album.title }}</h5>
+                    <h4>{{ album.title }}</h4>
                     <p>{{ album.author }}</p>
                     <p>{{ album.year }}</p>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
 
 

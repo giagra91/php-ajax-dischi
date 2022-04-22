@@ -3,6 +3,7 @@ const app = new Vue(
         el: "#app",
         data: {
             albums: [],
+            filteredAlbums: [],
         },
         created(){
             axios
@@ -12,7 +13,10 @@ const app = new Vue(
                 this.albums=result.data.results;
             }).catch((error) =>{
                 console.error(error);
-            })
+            });
+
+        },
+        methods:{
 
         }
     },
