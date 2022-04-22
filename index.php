@@ -16,12 +16,7 @@
     <div id="app">
         <header>
             <img src="img/logo.svg" alt="">
-            <select name="album-genres" id="album-genres">
-                <option value="Rock">Rock</option>
-                <option value="Pop">Pop</option>
-                <option value="Metal">Metal</option>
-                <option value="Jazz">Jazz</option>
-            </select>
+
         </header>
         
         <main>
