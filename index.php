@@ -15,7 +15,7 @@
 <body>
     <div id="app">
         <header>
-            <img src="img/logo.svg" alt="">
+            <img src="img/logo.svg" alt="Spotify logo">
 
         </header>
         
@@ -23,9 +23,15 @@
             <div class="central-container">
                 <div class="album-card" v-for="album in albums">
                     <img :src="album.poster" :alt="album.title">
-                    <h4>{{ album.title }}</h4>
-                    <p>{{ album.author }}</p>
-                    <p>{{ album.year }}</p>
+                    <h4>
+                        {{ album.title }}
+                    </h4>
+                    <p>
+                        {{ album.author }}
+                    </p>
+                    <p>
+                        {{ album.year }}
+                    </p>
                 </div>
             </div>
         </main>
