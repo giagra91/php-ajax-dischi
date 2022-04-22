@@ -8,14 +8,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <script src="http://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <title>Php Dischi</title>
 </head>
 <body>
-    <?php
-        include __DIR__ . "/server/data.php";
-    ?>
+    <header>
+        <img src="img/logo.svg" alt="">
+    </header>
     
+    <main>
+
+        <div id="app">
+            <div class="central-container">
+                <div class="album-card" v-for="album in albums">
+                    <img :src="album.poster" :alt="album.title">
+                    <h5>{{ album.title }}</h5>
+                    <p>{{ album.author }}</p>
+                    <p>{{ album.year }}</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
